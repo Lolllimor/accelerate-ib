@@ -78,7 +78,7 @@ export const Programs = () => {
                         y: 100,
                         opacity: 0,
                         rotateZ: 10,
-                        rotateX: 10,
+                        rotateX: -10,
                       },
                     }}
                     transition={{
@@ -107,7 +107,7 @@ export const Programs = () => {
                       idx % 2 === 0
                         ? 'bg-secondary-100 text-primary-800'
                         : 'bg-primary-800 text-white'
-                    } absolute inset-0  rounded-4xl p-6 md:p-10 flex flex-col  gap-5 w-full h-full min-[1410px]:opacity-100 opacity-0`}
+                    } absolute inset-0  rounded-4xl p-6 md:p-10 flex flex-col  gap-5 w-full h-full `}
                   >
                     <h3 className="font-clash font-semibold text-[clamp(0.8rem,5vw,1.5rem)] lg:text-4xl ">
                       What to expect

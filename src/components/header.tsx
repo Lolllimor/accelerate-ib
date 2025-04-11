@@ -1,6 +1,6 @@
 'use client';
-import React from 'react';
-import { usePathname } from 'next/navigation';
+import React, { useEffect } from 'react';
+import { usePathname, useRouter } from 'next/navigation';
 import Link from 'next/link';
 
 export const Header = ({
@@ -11,6 +11,7 @@ export const Header = ({
   textColor?: string;
 }) => {
   const pathname = usePathname();
+  const router = useRouter();
   const nav = [
     { name: 'About us', id: 'about-us' },
     { name: 'Programs', id: 'programs' },
@@ -18,6 +19,15 @@ export const Header = ({
     { name: 'Resources', id: 'resources' },
     { name: 'Contact', id: 'contact' },
   ];
+
+  const isValidPath =
+    nav.some((item) => pathname?.includes(item.id)) || pathname === '/';
+
+  useEffect(() => {
+    if (pathname && !isValidPath) {
+      router.push('/');
+    }
+  }, [pathname, isValidPath, router]);
 
   return (
     <header className="flex items-center justify-between md:py-5">
@@ -37,7 +47,7 @@ export const Header = ({
         {nav.map((item) => {
           const isActive = pathname?.includes(item.id);
           return (
-            <a
+            <Link
               key={item.id}
               href={`/${item.id}`}
               className={`${textColor} ${
@@ -45,7 +55,7 @@ export const Header = ({
               } text-white lg:text-base md:text-sm hover:underline transition-colors`}
             >
               {item.name}
-            </a>
+            </Link>
           );
         })}
       </nav>
