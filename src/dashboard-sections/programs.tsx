@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 import { useMediaQuery } from '../hooks/useMediaQuery';
 
 export const Programs = () => {
-const isLargeScreen = useMediaQuery('(min-width: 1410px)');
+  const isLargeScreen = useMediaQuery('(min-width: 1410px)');
   return (
     <section
       id="programs"
@@ -72,6 +72,7 @@ const isLargeScreen = useMediaQuery('(min-width: 1410px)');
                         opacity: 1,
                         rotateZ: 0,
                         transformPerspective: 1000,
+                        rotateX: 0,
                       },
                       hover: {
                         translateY: 100,
@@ -81,7 +82,7 @@ const isLargeScreen = useMediaQuery('(min-width: 1410px)');
                       },
                     }}
                     transition={{
-                      duration: 1,
+                      duration: 2,
                       ease: 'easeInOut',
                     }}
                     src={item.image}
@@ -138,7 +139,7 @@ const isLargeScreen = useMediaQuery('(min-width: 1410px)');
                 <motion.img
                   src={item.image}
                   alt={item.name}
-                  className="w-full h-auto rounded-lg object-cover max-[1410px]:hidden"
+                  className="w-full h-auto rounded-lg object-cover hidden"
                 />
               )}
             </motion.div>
