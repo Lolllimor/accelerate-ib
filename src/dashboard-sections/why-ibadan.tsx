@@ -10,7 +10,7 @@ export const WhyIbadan = () => {
   return (
     <section
       id="whyibadan"
-      className="bg-white px-[clamp(1.8rem,5vw,8.5rem)] md:py-[9.125rem] py-[6.25rem] relative"
+      className="bg-white px-[clamp(1.8rem,5vw,8.5rem)] md:py-[9.125rem] py-[6.25rem] relative "
     >
       <div className="md:border-[24px] border-[#EAF1F7] rounded-full bg-primary-800 size-16 md:size-24.5 absolute top-17 md:top-26.5  left-0 right-0 mx-auto border-[20px]"></div>
 

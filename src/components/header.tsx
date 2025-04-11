@@ -2,7 +2,6 @@
 import React from 'react';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
-import Image from 'next/image';
 
 export const Header = ({
   src,
@@ -23,8 +22,8 @@ export const Header = ({
   return (
     <header className="flex items-center justify-between md:py-5">
       <Link href="/">
-        <Image
-          src={src || ''}
+        <img
+          src={src}
           alt="Accelerate Ibadan logo"
           className="h-8 w-auto md:h-10"
           width={120}

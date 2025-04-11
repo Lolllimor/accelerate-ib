@@ -68,21 +68,21 @@ export const Programs = () => {
                   <motion.img
                     variants={{
                       rest: {
-                        translateY: 0,
+                        y: 0,
                         opacity: 1,
                         rotateZ: 0,
                         transformPerspective: 1000,
                         rotateX: 0,
                       },
                       hover: {
-                        translateY: 100,
+                        y: 100,
                         opacity: 0,
                         rotateZ: 10,
                         rotateX: 10,
                       },
                     }}
                     transition={{
-                      duration: 2,
+                      duration: 1,
                       ease: 'easeInOut',
                     }}
                     src={item.image}
