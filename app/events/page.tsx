@@ -13,18 +13,18 @@ const Page = () => {
   );
   const imageArray = Array.from(
     { length: 13 },
-    (_, i) => `/program${i + 1}.svg`
+    (_, i) => `/program${i + 1}.png`
   );
 
   const data = [
-    { title: 'Friendship Club', amount: 50, img: '/events1.svg' },
-    { title: 'Mindfulness Meetup', amount: 50, img: '/events2.svg' },
-    { title: 'Tech Talk', amount: 50, img: '/events3.svg' },
-    { title: 'Fitness Bootcamp', amount: 50, img: '/events4.svg' },
-    { title: 'Startup Showcase', amount: 50, img: '/events5.svg' },
-    { title: 'Career Coaching', amount: 50, img: '/events6.svg' },
-    { title: 'Book Exchange', amount: 50, img: '/events7.svg' },
-    { title: 'Coding Club', amount: 50, img: '/events8.svg' },
+    { title: 'Friendship Club', amount: 50, img: '/events1.png' },
+    { title: 'Mindfulness Meetup', amount: 50, img: '/events2.png' },
+    { title: 'Tech Talk', amount: 50, img: '/events3.png' },
+    { title: 'Fitness Bootcamp', amount: 50, img: '/events4.png' },
+    { title: 'Startup Showcase', amount: 50, img: '/events5.png' },
+    { title: 'Career Coaching', amount: 50, img: '/events6.png' },
+    { title: 'Book Exchange', amount: 50, img: '/events7.png' },
+    { title: 'Coding Club', amount: 50, img: '/events8.png' },
   ];
   return (
     <>
