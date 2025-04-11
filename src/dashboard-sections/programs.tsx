@@ -139,7 +139,7 @@ export const Programs = () => {
                 <motion.img
                   src={item.image}
                   alt={item.name}
-                  className="w-full h-auto rounded-lg object-cover hidden"
+                  className="w-full h-auto rounded-lg object-cover min-w-[1410px]:hidden"
                 />
               )}
             </motion.div>
