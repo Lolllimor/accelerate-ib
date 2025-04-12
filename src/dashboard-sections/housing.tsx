@@ -34,7 +34,7 @@ export const Housing = () => {
       <motion.div
         initial="rest"
         whileHover="hover"
-        className="flex flex-col gap-12 overflow-x-hidden md:pt-25 pt-17.5 "
+        className="flex flex-col gap-12 overflow-x-clip w-full md:pt-25 pt-17.5  "
       >
         <motion.div
           variants={{
@@ -45,7 +45,7 @@ export const Housing = () => {
             type: 'tween',
             duration: 0.8,
           }}
-          className="flex gap-12 items-center "
+          className="flex gap-12 items-center -translate-x-44 "
         >
           {first.map((item, idx) => (
             <div
